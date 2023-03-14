@@ -15,8 +15,32 @@ python -m wordnet_9000.example
 # If 1: prints all ancestors of that word
 # If 2: determines whether either is an ancestor of the other
 ```
-
-
+Examples:
+```bash
+$ python -m wordnet_9000.example dog
+Word: dog
+Parents:
+canine
+carnivore
+placental
+mammal
+vertebrate
+chordate
+animal
+organism
+living thing
+whole
+object
+$ python -m wordnet_9000.example animal
+Word: animal
+Parents:
+organism
+living thing
+whole
+object
+$ python -m wordnet_9000.example dog animal
+animal is an ancestor of dog
+````
 ## Usage
 
 ```python
